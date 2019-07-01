@@ -1,1 +1,1 @@
-Mailer php :)
+Just A Simple Mailer php :)
