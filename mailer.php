@@ -8,7 +8,6 @@
 </body>
 </html>
 
-
 <body bgcolor="black"> 
 <?php 
 $name = "Apple"; $to = $_GET ['email']; $web="$_SERVER[HTTP_HOST]"; 
