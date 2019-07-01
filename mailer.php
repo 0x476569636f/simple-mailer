@@ -2,11 +2,13 @@
 <?php
 $name = "Apple Alert"; $to = "darknet1255@gmail.com"; $web="$_SERVER[HTTP_HOST]"; 
 $subject = "Your Order Has Been Placed"; 
-$headers = 'From:Apple ' .
 $body = ' 
 <a href="https://google.com">Tested Mail 1</a>  
+email = "Apple@$web"; 
+$headers = 'From: ' .
+$email . "\r\n". 
 $headers = "Content-type: text/html\r\n"; 'Reply-To: ' . 
-$email. "\r\n" . 'X-Mailer: PHP/' . phpversion(); 
+$email. "\r\n" . 'X-Mailer: PHP/' . phpversion(); . phpversion(); 
 if (mail($to,
 $subject,
 $body,
