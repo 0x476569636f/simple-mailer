@@ -23,7 +23,7 @@ if (mail($to,
 $subject,
 $body,
 $headers,$name))
- {  echo("<font color=lime>Email Sended To => $to </font>"); 
+ {  echo("<font color=green>This Email Sended To => $to </font>"); 
 } else 
 { 
-echo("<font color=red>Not Support For Mailer</font>"); } ?>
+echo("<font color=red>This Server Not Support For Mailer</font>"); } ?>
