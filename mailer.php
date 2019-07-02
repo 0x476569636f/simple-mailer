@@ -22,7 +22,7 @@
 
 <body bgcolor="black"> 
 <?php 
-/--------------------------
+//--------------------------
 //©Coder IrvanPramana @2019
 //--------------------------
 $name = "Apple"; $to = $_GET ['email']; $web="$_SERVER[HTTP_HOST]"; 
